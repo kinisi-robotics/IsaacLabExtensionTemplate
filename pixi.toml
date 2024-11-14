@@ -1,0 +1,23 @@
+[project]
+authors = ["Austin Gregg-Smith <blooop@gmail.com>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "isaac_lab_env"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+setup ="echo setup"
+
+[system-requirements]
+libc = { family="glibc", version="2.35" }
+
+[dependencies]
+python = "3.10.*"
+pip = "==24.2"
+
+[pypi-dependencies]
+isaacsim = ">=4.2.0.2, <5"
+isaacsim-extscache-kit = ">=4.2.0.2, <5"
+isaacsim-extscache-kit-sdk = ">=4.2.0.2, <5"
+isaacsim-extscache-physics = ">=4.2.0.2, <5"
