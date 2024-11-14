@@ -7,7 +7,9 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
-setup ="echo setup"
+setup-isaac-lab ="sudo apt install -y cmake build-essential; ./IsaacLab/isaaclab.sh --install; python -m pip install -e exts/ext_template"
+
+demo = "python scripts/rsl_rl/train.py --task=Template-Isaac-Velocity-Rough-Anymal-D-v0"
 
 [system-requirements]
 libc = { family="glibc", version="2.35" }
