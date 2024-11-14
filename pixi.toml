@@ -1,0 +1,26 @@
+[project]
+authors = ["Austin Gregg-Smith <blooop@gmail.com>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "isaac_lab_env"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+setup ="sudo apt install -y cmake build-essential; ./IsaacLab/isaaclab.sh --install; python -m pip install -e exts/ext_template"
+
+demo = "python scripts/rsl_rl/train.py --task=Template-Isaac-Velocity-Rough-Anymal-D-v0"
+
+[system-requirements]
+libc = { family="glibc", version="2.35" }
+
+[dependencies]
+python = "3.10.*"
+pip = "==24.2"
+
+[pypi-dependencies]
+isaacsim = ">=4.2.0.2, <5"
+isaacsim-extscache-kit = ">=4.2.0.2, <5"
+isaacsim-extscache-kit-sdk = ">=4.2.0.2, <5"
+isaacsim-extscache-physics = ">=4.2.0.2, <5"
+pre-commit = ">=4.0.1, <5"
