@@ -21,6 +21,23 @@ This repository serves as a template for building projects or extensions based o
 
 ## Installation
 
+### Pixi
+
+if you have [pixi](https://pixi.sh) installed you can install the repo by running;
+```bash
+pixi run setup
+```
+It will take a while to download isaacsim
+
+and run the demo with:
+```bash
+pixi run demo
+```
+
+Or you can follow the official instructions 
+
+### Official Instructions
+
 - Install Isaac Lab by following the [installation guide](https://isaac-sim.github.io/IsaacLab/source/setup/installation/index.html). We recommend using the conda installation as it simplifies calling Python scripts from the terminal.
 
 - Clone the repository separately from the Isaac Lab installation (i.e. outside the `IsaacLab` directory):
