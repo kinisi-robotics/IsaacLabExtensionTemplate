@@ -7,9 +7,18 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
+#Environment Tasks
 setup ="sudo apt install -y cmake build-essential; ./IsaacLab/isaaclab.sh --install; python -m pip install -e exts/ext_template"
 
-demo = "python scripts/rsl_rl/train.py --task=Template-Isaac-Velocity-Rough-Anymal-D-v0"
+#Docker Tasks
+build-docker-isaac-lab-base="python ./IsaacLab/docker/container.py start"
+build-docker-isaac-lab-template={cmd="cd docker; docker compose --env-file .env.base --file docker-compose.yaml build isaac-lab-template",depends-on = ["build-docker-isaac-lab-base"]}
+start-container={cmd="cd docker; docker compose --env-file .env.base --file docker-compose.yaml up",depends-on = ["build-docker-isaac-lab-template"]}
+stop-container="cd docker; docker compose --env-file .env.base --file docker-compose.yaml down"
+
+#Demo Tasks
+demo-train = "python scripts/rsl_rl/train.py --task=Template-Isaac-Velocity-Rough-Anymal-D-v0"
+demo-play = "python scripts/rsl_rl/play.py --task=Template-Isaac-Velocity-Rough-Anymal-D-v0"
 
 [system-requirements]
 libc = { family="glibc", version="2.35" }
