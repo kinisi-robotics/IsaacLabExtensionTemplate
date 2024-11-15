@@ -1,3 +1,6 @@
 [submodule "IsaacLab"]
 	path = IsaacLab
 	url = git@github.com:isaac-sim/IsaacLab.git
+[submodule "kinisi_ros"]
+	path = kinisi_ros
+	url = https://github.com/kinisi-robotics/kinisi_ros.git
