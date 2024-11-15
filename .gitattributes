@@ -16,3 +16,51 @@
 *.hdr filter=lfs diff=lfs merge=lfs -text
 *.pt filter=lfs diff=lfs merge=lfs -text
 *.jit filter=lfs diff=lfs merge=lfs -text
+
+# Image files
+*.[Pp][Nn][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Gg][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Jj][Pp][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Pp][Mm] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Vv][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Gg][Mm] filter=lfs diff=lfs merge=lfs -text
+# Documents
+*.[Pp][Dd][Ff] filter=lfs diff=lfs merge=lfs -text
+# Video files
+*.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Pp]4 filter=lfs diff=lfs merge=lfs -text
+# Mesh files
+*.[Ss][Tt][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Aa][Ee] filter=lfs diff=lfs merge=lfs -text
+*.[Oo][Bb][Jj] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Ll][Yy] filter=lfs diff=lfs merge=lfs -text
+# Texture files
+*.[Mm][Tt][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Hh][Dd][Rr] filter=lfs diff=lfs merge=lfs -text
+# USD, USDA, USDC files
+*.[Uu][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Uu][Ss][Dd][Cc] filter=lfs diff=lfs merge=lfs -text
+*.[Uu][Ss][Dd][Aa] filter=lfs diff=lfs merge=lfs -text
+# Archives
+*.7[Zz] filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Rr] filter=lfs diff=lfs merge=lfs -text
+*.[Gg][Zz] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Aa][Rr] filter=lfs diff=lfs merge=lfs -text
+*.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
+# PyTorch model files
+*.[Pp][Tt] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Tt][Hh] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Kk][Ll] filter=lfs diff=lfs merge=lfs -text
+# numpy file format
+*.[Nn][Pp][Yy] filter=lfs diff=lfs merge=lfs -text
+# Compiled libraries
+*.[Aa] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Oo] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Oo].* filter=lfs diff=lfs merge=lfs -text
+*.[Ee][Xx][Ee] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Yy][Ll][Ii][Bb] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Ll][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Ll][Ii][Bb] filter=lfs diff=lfs merge=lfs -text
+*.[Jj][Ii][Tt] filter=lfs diff=lfs merge=lfs -textext
